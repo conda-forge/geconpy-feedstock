@@ -1,5 +1,5 @@
 {% set name = "gEconpy" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geconpy-{{ version }}.tar.gz
-  sha256: 3b7bdc22a6c878d46e7ed6a00c5008cc651e64a2050bed9846ee4418ee806791
+  sha256: f1b512637b9a70f8f161ba8ba0d4ea01a42473b0166d8035f4bb9e455d8c66ea
 
 build:
   noarch: python
@@ -18,8 +18,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools
-    - versioneer
+    - hatchling
+    - hatch-vcs
     - pip
   run:
     - python >={{ python_min }}
@@ -27,14 +27,13 @@ requirements:
     - numba
     - numpy
     - pandas
-    - pymc
-    - pymc-extras
-    - preliz
+    - pymc >=5.25.0
+    - pymc-extras >=0.4.0
+    - preliz >=0.2.0
     - pyparsing
     - pytensor
     - scipy
-    - setuptools
-    - sympy <1.13
+    - sympy >=1.14.0
     - sympytensor
     - ipython
     - xarray
