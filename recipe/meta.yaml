@@ -1,5 +1,5 @@
 {% set name = "gEconpy" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geconpy-{{ version }}.tar.gz
-  sha256: f1b512637b9a70f8f161ba8ba0d4ea01a42473b0166d8035f4bb9e455d8c66ea
+  sha256: 2c270ddde6008521cc43d59b9c52ce6591491f80bd78ee17e71fe7f1e715fc4f
 
 build:
   noarch: python
