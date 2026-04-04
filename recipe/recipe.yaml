@@ -1,6 +1,6 @@
 context:
   name: gEconpy
-  version: 2.0.3
+  version: "2.1.0"
   python_min: "3.11"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/geconpy-${{ version }}.tar.gz
-  sha256: 2c270ddde6008521cc43d59b9c52ce6591491f80bd78ee17e71fe7f1e715fc4f
+  sha256: 85ee81d9b0ffdb2f70e223c53d64800c65d01790a14a67688566f22741a7973e
 
 build:
   noarch: python
