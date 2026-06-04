@@ -1,7 +1,7 @@
 context:
   name: gEconpy
-  version: 2.0.3
-  python_min: "3.11"
+  version: "2.2.0"
+  python_min: "3.12"
 
 package:
   name: ${{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/geconpy-${{ version }}.tar.gz
-  sha256: 2c270ddde6008521cc43d59b9c52ce6591491f80bd78ee17e71fe7f1e715fc4f
+  sha256: 40f543cd7a79ba2600caef474251999196d6557b21fc67ede9cc73fbdc33310f
 
 build:
   noarch: python
@@ -24,18 +24,20 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
+    - better-optimize >=0.2.1
     - matplotlib-base
+    - networkx
     - numba
     - numpy
     - pandas
-    - pymc >=5.25.0
-    - pymc-extras >=0.4.0
-    - preliz >=0.2.0
+    - pymc >=6.0.0
+    - pymc-extras >=0.11.0
+    - preliz >=0.23.0
     - pyparsing
-    - pytensor
+    - pytensor >=3.0.0
     - scipy
     - sympy >=1.14.0
-    - sympytensor
+    - sympytensor >=2.0.0
     - ipython
     - xarray
 
