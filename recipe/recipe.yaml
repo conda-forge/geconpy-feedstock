@@ -24,20 +24,21 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - better-optimize >=0.2.1
+    - better-optimize >=0.4.2
     - matplotlib-base
     - networkx
     - numba
     - numpy
     - pandas
-    - pymc >=6.0.0
-    - pymc-extras >=0.11.0
-    - preliz >=0.23.0
+    - pymc >=6.3.0
+    - pymc-extras >=0.15.1
+    - preliz >=0.27.0
     - pyparsing
-    - pytensor >=3.0.0
+    - pytensor >=3.3.0
     - scipy
+    - setuptools
     - sympy >=1.14.0
-    - sympytensor >=2.0.0
+    - sympytensor >=2.1.0
     - ipython
     - xarray
 
